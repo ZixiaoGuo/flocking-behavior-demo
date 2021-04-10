@@ -32,7 +32,7 @@ public class Flock : MonoBehaviour
         squareMaxSpeed = maxSpeed * maxSpeed;
         squareNeighborRadius = neighborRadius * neighborRadius;
         squareAvoidanceRadius = squareNeighborRadius * avoidanceRadiusMultiplier * avoidanceRadiusMultiplier;
-
+        // generate flock agents
         for (int i = 0; i < startingCount; i++)
         {
             FlockAgent newAgent = Instantiate(
@@ -54,9 +54,6 @@ public class Flock : MonoBehaviour
         foreach (FlockAgent agent in agents)
         {
             List<Transform> context = GetNearbyObjects(agent);
-
-            //FOR DEMO ONLY
-            //agent.GetComponentInChildren<Renderer>().material.color = Color.Lerp(Color.white, Color.red, context.Count / 6f);
 
             Vector3 move = behavior.CalculateMove(agent, context, this);
             move *= driveFactor;
