@@ -26,9 +26,12 @@ public class Flock : MonoBehaviour
     float squareAvoidanceRadius;
     public float SquareAvoidanceRadius { get { return squareAvoidanceRadius; } }
 
+    public Vector3 destinationPoint;
+
     // Start is called before the first frame update
     void Start()
     {
+        
         squareMaxSpeed = maxSpeed * maxSpeed;
         squareNeighborRadius = neighborRadius * neighborRadius;
         squareAvoidanceRadius = squareNeighborRadius * avoidanceRadiusMultiplier * avoidanceRadiusMultiplier;
@@ -45,6 +48,10 @@ public class Flock : MonoBehaviour
             //newAgent.Initialize(this);
             agents.Add(newAgent);
         }
+
+        destinationPoint = new Vector3(Random.Range(-25f, 25f), Random.Range(-25f, 25f), Random.Range(-25f, 25f));
+        Debug.Log("This is the current target: " + destinationPoint);
+
     }
 
     // Update is called once per frame
