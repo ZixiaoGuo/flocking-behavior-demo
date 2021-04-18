@@ -9,7 +9,7 @@ public class CameraScript : MonoBehaviour
     void FixedUpdate()
     {
 
-        if (Input.GetKey("up") && !Input.GetKey(KeyCode.LeftShift))
+        if (Input.GetKey("up"))
         {
             transform.position += transform.TransformDirection(Vector3.up) * Time.deltaTime * movementSpeed;
         }

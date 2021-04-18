@@ -10,13 +10,19 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 2061dd08b0757634cad895f6d81066c4, type: 3}
-  m_Name: DefaulltBehavior
+  m_Name: Main
   m_EditorClassIdentifier: 
   behaviors:
   - {fileID: 11400000, guid: b7726efc9c0527e4581cf8bf59d8ec89, type: 2}
   - {fileID: 11400000, guid: 537cf1a573f4ad3468b544058c9533bb, type: 2}
   - {fileID: 11400000, guid: b65be8e992d249349bca07970c5738d6, type: 2}
+  - {fileID: 11400000, guid: fcefa3f399cbd2c4187571884cf08d12, type: 2}
+  - {fileID: 11400000, guid: 1e52d4134f037ac4682a6dcb92f635b7, type: 2}
+  - {fileID: 11400000, guid: 53deb1b389b5af6479f908694a17579a, type: 2}
   weights:
   - 1
-  - 1
+  - 0.7
+  - 2
+  - 0.1
+  - 2
   - 2
