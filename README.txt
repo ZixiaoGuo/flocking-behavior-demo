@@ -1,3 +1,5 @@
+Open the flocking behavior scene to begin
+
 You can use WASD keys to control the leader, which is the white cube in the scene.
 
 You can use arrow keys to control the camera.
