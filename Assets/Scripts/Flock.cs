@@ -27,6 +27,8 @@ public class Flock : MonoBehaviour
     public float SquareAvoidanceRadius { get { return squareAvoidanceRadius; } }
 
     public Vector3 destinationPoint;
+    public bool followLeader = false;
+    public bool lazyFlight = false;
 
     // Start is called before the first frame update
     void Start()
