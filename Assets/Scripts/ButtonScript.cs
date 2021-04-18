@@ -5,7 +5,7 @@ using UnityEngine;
 public class ButtonScript : MonoBehaviour
 {
 
-    public Flock flock;
+    public Flocks flock;
 
     public void SetLazyFlight()
     {

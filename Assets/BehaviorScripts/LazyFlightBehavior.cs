@@ -2,14 +2,14 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-[CreateAssetMenu(menuName = "Flock/Behavior/Lazy Flight")]
-public class LazyFlightBehavior : FlockBehavior
+[CreateAssetMenu(menuName = "Flock/Behaviors/Lazy Flight")]
+public class LazyFlightBehavior : FlockBehaviors
 {
     bool createdTarget = false;
 
 
 
-    public override Vector3 CalculateMove(FlockAgent agent, List<Transform> context, Flock flock)
+    public override Vector3 CalculateMove(Boids boid, List<Transform> context, Flocks flock)
     {
         if(flock.lazyFlight == false)
         {

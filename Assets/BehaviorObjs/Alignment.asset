@@ -9,6 +9,6 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 651c28bc36a88b04a9be4e55a99b2101, type: 3}
+  m_Script: {fileID: 11500000, guid: 6dcf78c55098785429f18bd0df7d5c91, type: 3}
   m_Name: Alignment
   m_EditorClassIdentifier: 

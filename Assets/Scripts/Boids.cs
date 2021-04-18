@@ -2,16 +2,14 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-[RequireComponent(typeof(Collider))]
-public class FlockAgent : MonoBehaviour
+public class Boids : MonoBehaviour
 {
-
-    Collider agentCollider;
-    public Collider AgentCollider { get { return agentCollider; } }
+    Collider boidsCollider;
+    public Collider BoidsCollider { get { return boidsCollider; } }
 
     void Start()
     {
-        agentCollider = GetComponent<Collider>();
+        boidsCollider = GetComponent<Collider>();
     }
 
     public void Move(Vector3 velocity)
@@ -19,5 +17,4 @@ public class FlockAgent : MonoBehaviour
         transform.forward = velocity;
         transform.position += velocity * Time.deltaTime;
     }
-
 }

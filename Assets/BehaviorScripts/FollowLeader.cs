@@ -2,12 +2,12 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-[CreateAssetMenu(menuName = "Flock/Behavior/Follow Leader")]
-public class FollowLeader : FlockBehavior
+[CreateAssetMenu(menuName = "Flock/Behaviors/Follow Leader")]
+public class FollowLeader : FlockBehaviors
 {
 
 
-    public override Vector3 CalculateMove(FlockAgent agent, List<Transform> context, Flock flock)
+    public override Vector3 CalculateMove(Boids agent, List<Transform> context, Flocks flock)
     {
         if (flock.followLeader == false)
         {

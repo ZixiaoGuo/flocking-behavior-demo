@@ -2,15 +2,15 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-[CreateAssetMenu(menuName = "Flock/Behavior/Stay In Radius")]
-public class StayInRadiusBehavior : FlockBehavior
+[CreateAssetMenu(menuName = "Flock/Behaviors/Stay In Radius")]
+public class StayInRadius : FlockBehaviors
 {
     public Vector3 center;
     public float radius = 15f;
 
-    public override Vector3 CalculateMove(FlockAgent agent, List<Transform> context, Flock flock)
+    public override Vector3 CalculateMove(Boids boid, List<Transform> context, Flocks flock)
     {
-        Vector3 centerOffset = center - agent.transform.position;
+        Vector3 centerOffset = center - boid.transform.position;
         float t = centerOffset.magnitude / radius;
         if (t < 0.9f)
         {

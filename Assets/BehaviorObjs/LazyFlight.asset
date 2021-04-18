@@ -12,4 +12,3 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 482cc10fefb105c45bb97b884448f771, type: 3}
   m_Name: LazyFlight
   m_EditorClassIdentifier: 
-  destinationPoint: {x: 0, y: 0, z: 0}
